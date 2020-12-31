@@ -100,13 +100,13 @@
   </div>
 	<div class="topHeaderEmiChart">
 	 <div class="lone-type">
-		  <p>Select Loan Type</p>
+		  <p style="text-align: center; color:#f52e5d">Select Loan Type</p>
 		  <div class="lone-type-icon">
 		   <ul id="">
-			<li class="loan-type-list-item loanType" data-loan = "1" data-amount="5000000" data-tenure="20" data-rate="10"><em class="icon-homeloan"></em><span>Home Loan</span></li>
-			<li class="loan-type-list-item loanType" data-loan = "2" data-amount="500000" data-tenure="5" data-rate="12"><em class="icon-personal-loan"></em><span>Personal Loan</span></li>
-			<li class="loan-type-list-item loanType" data-loan = "4" data-amount="5000000" data-tenure="10" data-rate="12"><em class="icon-loan-againt"></em><span>Loan Against Property</span></li>
-			<li class="loan-type-list-item loanType" data-loan = "3" data-amount="1500000" data-tenure="10" data-rate="17"><em class="icon-business-loan"></em><span>Business Loan</span></li>
+			<li class="loan-type-list-item loanType" data-loan = "1" data-amount="5000000" data-tenure="20" data-rate="10"><span>Home Loan</span></li>
+			<li class="loan-type-list-item loanType" data-loan = "2" data-amount="500000" data-tenure="5" data-rate="12"><span>Personal Loan</span></li>
+			<li class="loan-type-list-item loanType" data-loan = "4" data-amount="5000000" data-tenure="10" data-rate="12"><span>Mortgage Loan</span></li>
+			<li class="loan-type-list-item loanType" data-loan = "3" data-amount="1500000" data-tenure="10" data-rate="17"><span>Business Loan</span></li>
 		  </ul>
 		  </div>
 		</div>
@@ -194,7 +194,32 @@
 		  </div>
 		</div>
 	  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-		
+		<div class="v1_resultboxesleft">
+			<div class="v1_greenpad">
+			<div class="v1_greentext2">
+			<p>Loan EMI</p>
+			
+			<h2 class="v1_loanEmiAmt"> 4,707</h2>
+			</div>
+			</div>
+			
+			<div class="v1_greenpad">
+			<div class="v1_newgreentext2">
+			<p>Total Interest Payable</p>
+			
+			<h2 class="v1_totalIntPay">Rs.12,979</h2>
+			</div>
+			</div>
+			
+			<div class="v1_greenpad">
+			<div class="v1_newgreentext3">
+			<p>Total Payment (Principle + Interest)</p>
+			
+			<h2 class="v1_TitalPayment1">Rs.1,12,979</h2>
+			</div>
+			</div>
+			</div>
+<!-- 		
 		<div class="loanDetails">
 		  <ul>
 			<li>
@@ -210,7 +235,7 @@
 			  <label>Total Payment <span>(Principal + Interest)</span> </label>
 			  <strong>₹<span id="totalPayment"></span></strong></li>
 		  </ul>
-		</div>
+		</div> -->
 	  </div>
 	  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 		<div class="counterBox">
@@ -470,13 +495,13 @@ function calculate(p,n,r)
 	}
 	totalPayment=parseFloat(Math.ceil(tipmt+p));
 	prate=Math.ceil(prate)+"";
-	$('#loanEmi').html(prate.replace(/(\d)(?=(\d\d)+\d(?!\d))/g, "$1,"));
+	$('.v1_loanEmiAmt').html("<span>₹</span>"+prate.replace(/(\d)(?=(\d\d)+\d(?!\d))/g, "$1,"));
 	stipmt=Math.ceil(tipmt)+"";
-	$('#totalInterestPayable').html(stipmt.replace(/(\d)(?=(\d\d)+\d(?!\d))/g, "$1,"));
+	$('.v1_totalIntPay').html("<span>₹</span>"+stipmt.replace(/(\d)(?=(\d\d)+\d(?!\d))/g, "$1,"));
 	sp=p+"";
 	$('#totalPrincipal').html(sp.replace(/(\d)(?=(\d\d)+\d(?!\d))/g, "$1,"));
 	stotalPayment=totalPayment+"";
-	$('#totalPayment').html(stotalPayment.replace(/(\d)(?=(\d\d)+\d(?!\d))/g, "$1,"));
+	$('.v1_TitalPayment1').html("<span>₹</span>"+stotalPayment.replace(/(\d)(?=(\d\d)+\d(?!\d))/g, "$1,"));
 
 	interestPercent=((parseFloat(stipmt)/parseFloat(stotalPayment))*100).toFixed(2);
 
@@ -504,9 +529,9 @@ function calculate(p,n,r)
 					enabled: true,
 				  	format: '<b>{point.percentage:.1f} %</b>',
 				  	style: {
-					  	color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+					  	color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || '#f52e5d'
 				  	},
-				  	connectorColor: 'silver'
+				  	connectorColor: '#f52e5d'
 			  	}
 		  	}
 		},

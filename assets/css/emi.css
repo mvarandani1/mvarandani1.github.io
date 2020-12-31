@@ -1,5 +1,5 @@
 .topHeaderEmiChart {
-	background-color: #222222;
+	
 	margin: 0;
 	display: block;
 	overflow: hidden;
@@ -13,7 +13,7 @@
 
 .topHeaderEmiChart .lone-type p {
 	font-size: 18px;
-	color: #fff;
+	color:#222222;
 	font-family: proxima_nova_rgbold;
 	text-transform: uppercase;
 	margin-bottom: 15px
@@ -44,7 +44,7 @@
 	position: relative;
 	overflow: hidden;
 	transition: .3s;
-	color: #333
+	color: #000
 }
 
 .topHeaderEmiChart .lone-type .lone-type-icon ul li em.active:after {
@@ -74,7 +74,15 @@
 	position: relative;
 	top: -8px;
 	left: 15px;
-	color: #fff
+	color: #222222;
+}
+.topHeaderEmiChart .lone-type .lone-type-icon ul li span:hover
+{
+	color: #f52e5d;
+	transform: scale(1.3);
+	border-bottom: 2px solid #f52e5d;
+	overflow: hidden;
+
 }
 
 .emiSecBox .panel-group {
@@ -91,7 +99,7 @@
 }
 
 .heading {
-	background-color: #4d5158;
+	background-color: #222222;
 	color: #fff;
 	border-bottom: 1px solid rgba(110, 110, 110, .6);
 	padding: 15px
@@ -117,12 +125,12 @@
 }
 
 .custom-heading1 .custom-row ul {
-	background-color: #222222;
+	background-color: #f52e5d;;
 	color: #fff
 }
 
 .custom-heading1 .custom-row ul li {
-	border: none;
+	border:1px solid  #fff;
 	padding: 10px 8px
 }
 
@@ -153,7 +161,7 @@
 }
 
 .heading-emi-calculator h1 {
-	color: #5250a3;
+	color: #f52e5d;
 	font-size: 32px
 }
 
@@ -166,12 +174,29 @@
 .emiCalculatorBox .priceRangeSlider .inputBox {
 	position: relative;
 	background: #fff
-}
 
+}
+.inputBox input[type=text]:focus
+{
+border: 1px solid #f52e5d !important;
+transform: scale(1.01);
+padding-left : 1 em !important;
+
+}
+.emiCalculatorBox .priceRangeSlider .inputBox1:focus-within::after {
+	content: '₹';
+	position: absolute;
+	top: 5px;
+	left: 0px;	
+	color: #222222;
+	font-size: 18px;
+	
+	
+}
 .emiCalculatorBox .priceRangeSlider .inputBox input[type=text] {
-	padding: 5px;
+	/* padding: 5px; */
 	font-size: 14px;
-	color: #333;
+	color: #000;
 	width: 100%;
 	height: 35px;
 	border: 1px solid #b7b7b7;
@@ -185,21 +210,28 @@
 	content: '₹';
 	position: absolute;
 	top: 5px;
-	left: 5px;
-	color: #000;
+	left: 8px;
+	color: #222222;;
 	font-size: 18px
 }
 
 .emiCalculatorBox .priceRangeSlider .inputBox1 input {
-	padding: 5px 5px 5px 15px!important
+	padding: 5px 5px 5px 15px
 }
-
+.emiCalculatorBox .priceRangeSlider .inputBox2:focus-within::after {
+	content: 'years';
+	position: absolute;
+	top: 6px;
+	right: 5px;
+	color: #f52e5d;
+	font-size: 16px
+}
 .emiCalculatorBox .priceRangeSlider .inputBox2::after {
 	content: 'years';
 	position: absolute;
 	top: 6px;
 	right: 5px;
-	color: #666;
+	color: #222222;;
 	font-size: 14px
 }
 
@@ -216,6 +248,14 @@
 	font-size: 14px
 }
 
+.emiCalculatorBox .priceRangeSlider .inputBox3:focus-within:after {
+	content: '%';
+	position: absolute;
+	top: 8px;
+	right: 5px;
+	color: #f52e5d;
+	font-size: 16px
+}
 .emiCalculatorBox .priceRangeSlider .inputBox3 input {
 	padding: 5px 18px 5px 5px!important
 }
@@ -234,14 +274,14 @@
 }
 
 .emiCalculatorBox .priceRangeSlider .ui-widget-header {
-	background: #0094da
+	background: #f52e5d
 }
 
 .emiCalculatorBox .priceRangeSlider .ui-slider-horizontal .ui-slider-handle {
 	width: 25px;
 	height: 25px;
 	outline: 0;
-	background: #0094da!important;
+	background: #f52e5d!important;
 	border-radius: 50%;
 	border: 5px solid #dcdcdc;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .14);
@@ -252,13 +292,13 @@
 	margin: 0;
 	text-align: left;
 	display: block;
-	color: #333;
-	font-size: 14px
+	color: #222222;
+	font-size: 18px
 }
 
 .emiCalculatorBox .priceRangeSlider p {
-	color: #666;
-	font-size: 12px
+	color: #f52e5d;
+	font-size: 14px
 }
 
 .emiCalculatorBox .priceRangeSlider .separationBox {
@@ -275,7 +315,7 @@
 .emiCalculatorBox .priceRangeSlider .separationBox ul li {
 	padding: 0;
 	display: inline-block;
-	font-size: 11px;
+	font-size: 13px;
 	width: 20%;
 	text-align: right
 }
@@ -295,14 +335,17 @@
 .emiCalculatorBox .priceRangeSlider .separationTenureBox ul li {
 	padding: 0;
 	display: inline-block;
-	font-size: 11px;
+	font-size: 13px;
 	width: 20%;
-	text-align: right
+	text-align: right;
+	color:#222222;
+
 }
 
 .emiCalculatorBox .priceRangeSlider .separationTenureBox ul li:first-child {
 	margin-left: 0;
 	width: 0;
+	;
 	text-align: left
 }
 
@@ -315,15 +358,17 @@
 .emiCalculatorBox .priceRangeSlider .separationInterestBox ul li {
 	padding: 0;
 	display: inline-block;
-	font-size: 11px;
+	font-size: 13px;
 	width: 20%;
-	text-align: right
+	color:#222222;
+	text-align: right;
 }
 
 .emiCalculatorBox .priceRangeSlider .separationInterestBox ul li:first-child {
 	margin-left: 0;
 	width: 0;
-	text-align: left
+	text-align: left;
+	color:#222222;
 }
 
 .emiCalculatorBox .loanDetails {
@@ -369,7 +414,7 @@
 
 .emiCalculatorBox .loanDetails ul li strong {
 	display: block;
-	color: #333;
+	color: #000;
 	font-weight: 400;
 	font-size: 28px
 }
@@ -456,7 +501,7 @@
 	bottom: 10px;
 	right: -35px;
 	line-height: 40px;
-	color: #333
+	color: #000
 }
 
 .highcharts-title {
@@ -511,7 +556,8 @@
 	margin: 20px 0 10px;
 	font-size: 18px;
 	font-weight: 700;
-	display: inline-block
+	display: inline-block;
+	color:#f52e5d;
 }
 
 @media screen and (max-width:1024px) {
@@ -563,4 +609,100 @@
 	.heading-emi-calculator h1 {
 		font-size: 22px
 	}
+}
+
+/* loan details */
+
+.v1_resultboxesleft {
+    width: 100%;
+    float: left;
+    padding-top: 30px;
+}
+.v1_resultboxesleft .v1_greenpad {
+    padding: 0;
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+.v1_greentext2 {
+    width: 100%;
+	float: left;
+	color:#222222;
+    background: #00e5a0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 0;
+    min-height: 96px;
+}
+.v1_greentext2 h2 {
+    font-family: DaxOT-Bold;
+    font-size: 24px;
+    color: #fff;
+    line-height: 32px;
+    text-align: left;
+    width: 100%;
+    margin-top: 15px;
+    float: left;
+    margin-bottom: 5px;
+}
+.v1_loanEmiAmt {
+    font-size: 24px!important;
+    color: #fff!important;
+    font-family: DaxOT-Bold;
+    display: inline;
+}
+
+
+.v1_newgreentext2 {
+    width: 100%;
+    float: left;
+    background: #448aff;
+    border-radius: 5px;
+    padding: 10px 20px;
+	margin-top: 0;
+	color:#222222;
+    min-height: 96px;
+}
+.v1_newgreentext2 h2 {
+    font-family: DaxOT-Bold;
+    font-size: 24px;
+    color: #fff;
+    line-height: 32px;
+    text-align: left;
+    margin-top: 15px;
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+.v1_newgreentext3 {
+width: 100%;
+    float: left;
+    background: #aaa;
+	border-radius: 5px;
+	color:#222222;
+    padding: 10px 20px;
+    margin-top: 0;
+    min-height: 96px;
+}
+
+.v1_newgreentext3 h2 {
+    font-family: DaxOT-Bold;
+    font-size: 24px;
+    color: #fff;
+    line-height: 32px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    float: left;
+}
+
+@media screen and (max-width: 767px) and (min-width: 319px)
+{.v1_greentext2 {
+    min-height: 83px;
+}
+}
+body
+{
+	color: #000!important;
 }
