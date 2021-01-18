@@ -1,0 +1,442 @@
+.top-dflex{
+  display: flex;
+  margin-left:2rem;
+}
+
+.tab-content{
+  width: 1300px;
+  margin-left: -15rem;
+}
+
+.rera-img-div:hover, .rera-active{
+  border: 1px solid #f52e5d;
+  border-radius: 5px;
+}
+
+.rera-img-div p:hover , .rera-active p{
+  background: #f52e5d;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.rera-img-div{
+  text-align: center;
+  height: 80px;
+  width: 100px;
+}
+
+input[type="checkbox"]{
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.card {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  width: 620px;
+  height: 70vh;
+  max-height: 100vh;
+  position: relative;
+}
+
+.card-border img{
+  width: 40px;
+  height: 35px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 600px;
+  position: relative;
+  margin: auto;
+  overflow-y: scroll !important;
+  overflow-x: scroll !important;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #000000;
+  font-size: 18px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.mySlides{
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+.mySlides ul{
+  display: flex;
+  /* width: 41vw; */
+}
+
+.mySlides ul li{
+  cursor: pointer;
+  line-height: 32px;
+}
+
+/* SlideShow Container end */
+
+.accordion img{
+  width: 40px;
+  height: 40px;
+  margin-top:-1rem;
+}
+
+/* Popup on hover image */
+.green, .red {
+  position: relative;
+}
+
+.green div, .red div {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom:100%;
+  height: 60px;
+  margin-top: -50px; /* approx adjustment for arrow */
+  margin-left: -8px;
+}
+
+.green div h5, .red div h5{
+  font-size:14px;
+}
+
+.green a:hover + div{
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  width: 110px;
+  line-height: 20px;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  z-index: 999;
+  color: #fff;
+  background: green;
+  border-radius: 5px;
+  box-shadow: #333 -4px 4px 16px 2px;
+  -webkit-transition: opacity 100ms ease-in;
+  -o-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+
+.green div:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent green transparent transparent;
+  top: 50px;
+  left: 30px;
+}
+
+.red a:hover + div{
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  width: 110px;
+  line-height: 20px;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  z-index: 999;
+  color: #fff;
+  background: red;
+  border-radius: 5px;
+  box-shadow: #333 -4px 4px 16px 2px;
+  -webkit-transition: opacity 100ms ease-in;
+  -o-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+
+.red div:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent red transparent transparent;
+  top: 50px;
+  left: 30px;
+}
+
+.fa-bars{
+  margin-top:2rem;font-size:20px;color:#f52e5d;
+}
+
+.change-card1{
+  display: none;
+  width: 27%;height:40vh;
+}
+
+.controls {
+  text-align: left;
+  position: relative;
+}
+.controls input[type="text"],
+.controls input[type="email"],
+.controls input[type="tel"],
+.controls input[type="date"],
+.controls textarea,
+.controls button,
+.controls select {
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #c6c6c6;
+  width: 100%;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #f52e5d;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 4px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.controls input[type="text"]:focus, .controls input[type="text"]:hover,
+.controls input[type="email"]:focus,
+.controls input[type="email"]:hover,
+.controls input[type="tel"]:focus,
+.controls input[type="tel"]:hover,
+.controls input[type="date"]:focus,
+.controls input[type="date"]:hover,
+.controls textarea:focus,
+.controls textarea:hover,
+.controls button:focus,
+.controls button:hover,
+.controls select:focus,
+.controls select:hover {
+  outline: none;
+  border-color: #f52e5d;
+}
+.controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
+.controls input[type="email"]:focus + label,
+.controls input[type="email"]:hover + label,
+.controls input[type="tel"]:focus + label,
+.controls input[type="tel"]:hover + label,
+.controls input[type="date"]:focus + label,
+.controls input[type="date"]:hover + label,
+.controls textarea:focus + label,
+.controls textarea:hover + label,
+.controls button:focus + label,
+.controls button:hover + label,
+.controls select:focus + label,
+.controls select:hover + label {
+  color: #f52e5d;
+  cursor: text;
+}
+
+.hide{
+  display: none;
+}
+
+/* List View Panel Styling */
+.ulList{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.ulList li{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 1px solid #f1f1f1;
+  padding: 10px;
+  width: 200px;
+}
+
+.listHeading{
+  font-weight: bold;
+}
+
+.listPanelHeading{
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.ulList li{
+  list-style: none !important;
+}
+
+.BookBtn{
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.BookBtn a{
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #f52e5d;
+}
+
+@media (max-width:600px){
+  .tab-content{
+    width: 500px;
+    margin-left: 3rem !important;
+  }
+  .main-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    width: 360px;
+    margin-left: -2rem;
+  }
+  .hide-sm{
+    display: none !important;
+  }
+  .slideshow-container{
+    width: 360px;
+  }
+  .green a:hover + div, .red a:hover + div {
+    width: 90px;
+    font-size:12px;
+  }
+  .change-card{
+    width: 96% !important;
+  }
+  .change-card1{
+    height: 80vh;
+    margin-top: 2rem;
+    margin-left: -2rem;
+    width: 355px;
+  }
+  .change-card-div{
+    text-align: center;
+    margin: auto !important;
+  }
+  .card-border img{
+    width: 35px;
+  }
+  .list-view .card{
+    width: 360px !important;
+  }
+  .up-accordion{
+    width: 360px !important;
+    margin-left: -2rem !important;
+  }
+  .accordion-d-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .fa-bars{
+    margin-left: -50rem;
+    color:#f52e5d;
+  }
+  .rera-div{
+    margin-bottom: 1rem;
+    
+    margin-left: -1rem;
+  }
+  .rera-div div{
+    margin-left: 0.5rem;
+  }
+  .rera-img-div{
+    margin-right: 2rem;
+  }
+  .third-div > table{
+    width: 350px !important;
+  }
+  
+  .form-wizard{
+    padding: 0px !important;
+  }
+  .mySlides ul{
+    margin-right: -280px;
+  }
+  .row-dflex{
+    display: flex;
+    flex-direction: row !important;
+    overflow-y: hidden;
+    overflow-x:auto;
+    width: 320px;
+  }
+
+  .row-dflex .d-flex{
+    width: 200px !important;
+  }
+
+  .row-dflex1{
+    display: flex;
+    flex-direction:column !important;
+    overflow-y: hidden;
+    overflow-x:auto;
+  }
+
+  .rera-width{
+    width: 320px;
+  }
+
+  .rera-width .rera-img-div{
+    width: 120px;
+  }
+
+  .list-view .card{
+    margin-left: -2rem !important;
+  }
+
+}
+
+@media (max-width: 600px){
+  .hide{
+    display: none !important;
+  }
+}

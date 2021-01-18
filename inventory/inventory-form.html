@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+	<!-- Metas -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Links -->
+	<link rel="shortcut icon" href="images/favicon.png" />
+	<!-- google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- Plugins CSS -->
+	<link href="css/plugin.css" rel="stylesheet" />
+	<!-- style CSS -->
+	<link href="../css/style.css" rel="stylesheet" />
+	<!-- Document Title -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<title>Residential & Commercial Property Site | Buy Sell Rent Properties - 5xprop</title>
+	<style>
+		@media (max-width: 855px){
+			.logo {
+			    margin-top: -0.5rem;
+			    width: 100% !important;
+			}	
+			ul.top-nav li a.btn.v7 {
+			    padding: 4px 12px;
+			    margin-right: 100px;
+			}
+			.third-div{
+				overflow-x :auto;
+				margin-left: 0px !important;
+			}
+
+			.third-div table{
+				width: 1000px !important;
+				margin-left: 0px !important;
+			}
+			.form-wizard{
+				margin-left: -4rem;
+			}
+			.wizard1{
+				margin-left:4rem !important;
+				margin-bottom: 3rem;
+			}
+			.front-up-dflex{
+				width:100% !important;
+			}
+
+			.front-up-dflex p{
+				display: flex;
+				flex-direction: column;
+			}
+			.front-up-dflex img{
+				width: 32px;
+			}
+			.form-wizard{
+				margin-top: 1rem;
+				padding: 0px;
+			}
+		}
+
+		@media (max-width: 365px){
+			.form-wizard{
+				margin-top: 1rem;
+				padding: 30px;
+				margin-bottom: 2rem;
+			}
+		}	
+
+		.navigation {
+		  height: 70px;
+		  background: #fff;
+		  margin-top: 3.5rem;
+		  margin-bottom:3rem;
+		}
+		.header{
+			text-align: center;
+			padding: 15px;
+		}
+		.img-fluid{
+			margin-top: -1.2rem;
+		}
+
+		table {
+		  border-collapse: collapse;
+		  border-spacing: 0;
+		}
+
+		caption, th, td {
+		  text-align: left;
+		  font-weight: normal;
+		  vertical-align: middle;
+		}
+
+		q, blockquote {
+		  quotes: none;
+		}
+		q:before, q:after, blockquote:before, blockquote:after {
+		  content: "";
+		  content: none;
+		}
+
+		article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+		  display: block;
+		}
+
+		/* Colors */
+		/* ---------------------------------------- */
+
+		.form-group {
+		  margin-bottom: 20px;
+		}
+
+		h2.heading {
+		  font-size: 18px;
+		  text-transform: uppercase;
+		  font-weight: 400;
+		  text-align: left;
+		  color: #000;
+		  border-bottom: 1px solid #000;
+		  padding-bottom: 3px;
+		  margin-bottom: 20px;
+		}
+
+		.controls {
+		  text-align: left;
+		  position: relative;
+		}
+		.controls input[type="text"],
+		.controls input[type="email"],
+		.controls input[type="tel"],
+		.controls input[type="date"],
+		.controls textarea,
+		.controls button,
+		.controls select {
+		  padding: 12px;
+		  font-size: 14px;
+		  border: 1px solid #c6c6c6;
+		  width: 100%;
+		  margin-bottom: 18px;
+		  color: #888;
+		  font-size: 16px;
+		  font-weight: 300;
+		  background-color: #fff;
+		  -moz-border-radius: 2px;
+		  -webkit-border-radius: 2px;
+		  border-radius: 4px;
+		  -moz-transition: all 0.3s;
+		  -o-transition: all 0.3s;
+		  -webkit-transition: all 0.3s;
+		  transition: all 0.3s;
+		}
+		.controls input[type="text"]:focus, .controls input[type="text"]:hover,
+		.controls input[type="email"]:focus,
+		.controls input[type="email"]:hover,
+		.controls input[type="tel"]:focus,
+		.controls input[type="tel"]:hover,
+		.controls input[type="date"]:focus,
+		.controls input[type="date"]:hover,
+		.controls textarea:focus,
+		.controls textarea:hover,
+		.controls button:focus,
+		.controls button:hover,
+		.controls select:focus,
+		.controls select:hover {
+		  outline: none;
+		  border-color: #f52e5d;
+		}
+		.controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
+		.controls input[type="email"]:focus + label,
+		.controls input[type="email"]:hover + label,
+		.controls input[type="tel"]:focus + label,
+		.controls input[type="tel"]:hover + label,
+		.controls input[type="date"]:focus + label,
+		.controls input[type="date"]:hover + label,
+		.controls textarea:focus + label,
+		.controls textarea:hover + label,
+		.controls button:focus + label,
+		.controls button:hover + label,
+		.controls select:focus + label,
+		.controls select:hover + label {
+		  color: #f52e5d;
+		  cursor: text;
+		}
+		.controls .fa-sort {
+		  position: absolute;
+		  right: 10px;
+		  top: 17px;
+		  color: #999;
+		}
+		.controls select {
+		  -moz-appearance: none;
+		  -webkit-appearance: none;
+		  cursor: pointer;
+		}
+		.controls label {
+		  position: absolute;
+		  left: 8px;
+		  top: 12px;
+		  color: #999;
+		  font-size: 16px;
+		  display: inline-block;
+		  padding: 4px 10px;
+		  font-weight: 400;
+		  background-color: rgba(255, 255, 255, 0);
+		  pointer-events: none;
+		  -moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+		  -o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+		  -webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+		  transition: color 0.3s, top 0.3s, background-color 0.8s;
+		}
+		.controls label.active {
+		  top: -11px;
+		  color: #555;
+		  background-color: white;
+		}
+		.controls textarea {
+		  resize: none;
+		  height: 200px;
+		}
+		.controls button {
+		  cursor: pointer;
+		  background-color: #f52e5d;
+		  border: none;
+		  color: #fff;
+		  padding: 12px 0;
+		}
+		.controls button:hover {
+		  background-color: #f52e5d;
+		}
+
+		.front-up{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			background: #fff;
+			width:90%;
+			border-radius: 5px;
+			padding:1.5rem;
+		}
+
+	</style>
+</head>
+
+<body>
+	<!--Preloader ends-->
+	<!--Page Wrapper starts-->
+	<div class="page-wrapper">
+		<!--Header starts-->
+		<header class="header transparent scroll-hide">
+			<!--Main Menu starts-->
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-sm-3 col-4">
+						<a class="logo" href="index.html"><img src="../images/logo.png" alt="logo" class="img-fluid"></a>
+					</div>
+					<div class="col-lg-9 col-md-9 col-sm-9 col-8">
+						<ul class="top-nav">
+							<li>
+								<select class="select-arrow">
+									<option value="https://www.5xprop.com/?change_city=delhi" selected="">Delhi</option>
+									<option value="https://www.5xprop.com/?change_city=faridabad">Faridabad</option>
+									<option value="https://www.5xprop.com/?change_city=ghaziabad">Ghaziabad</option>
+									<option value="https://www.5xprop.com/?change_city=greater-noida">Greater Noida</option>
+									<option value="https://www.5xprop.com/?change_city=gurugram">Gurugram</option>
+									<option value="https://www.5xprop.com/?change_city=mathura">Mathura</option>
+									<option value="https://www.5xprop.com/?change_city=noida">Noida</option>
+								</select>
+							</li>
+							<li class="d-none d-md-block"><a href="#"><i class="fa fa-user-alt mr-1"></i>  Profile </a> </li>
+							<li><a class="btn v7" href="#"><i class="fa fa-home mr-2"></i>Post Free Ad </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--Main Menu ends-->
+		</header>
+		<main style="margin-top: 3rem;">
+			<div class="front-up" style="margin-left:4rem;">
+				<h4>Anjara Panorama<h4>
+				<p>Noida</p>
+			</div>
+			<br>
+			<div class="front-up" style="margin-left:4rem;">
+				<p>Unit</p>
+				<h6>AP0A023002<h6>
+				<div class="d-flex front-up-dflex" style="justify-content:space-between;width:40%;">
+					<p><img src="./images/floor.png"> &nbsp;Floor 23</p>
+					<p><img src="./images/house.png"> &nbsp;Size 2BHK+Study (1155 Sq. Ft.)</p>
+				</div>
+			</div>
+			<br>
+			<div class="front-up" style="margin-left:4rem;">
+				<p style="text-align:center;"><strong>10:90</strong></p>
+				<hr>
+				<h4 style="text-align:center;">Price Breakup<h4>
+				<hr>
+				<div class="third-div">
+					<table style="width: 1500px;margin-left:14rem;">
+						<tbody>
+							<tr>
+								<td><p>BSP<p></td>
+								<td>
+									<p>₹ 2,881,725
+										<br>
+										Twenty Eight Lakhs Eighty One Thousand Seven Hundred and Twenty Five
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td><p>Additional Charges</p></td>
+								<td>
+									<p>₹ 3,40,000
+										<br>
+										Three Lakhs Forty Thousand
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td><p>Total Unit Cost</p></td>
+								<td>
+									<p>₹ 3,221,725
+										<br>
+										Thirty Two Lakhs Twenty One Thousand Seven Hundred and Twenty Five
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<br>
+			<form style="margin:auto;width:90%;" action="">
+			  <!--  General -->
+			  <div class="form-group">
+			    <h2 class="heading">Customer Details</h2>
+			    <div class="controls">
+			      <input type="text" id="name" class="floatLabel" name="name">
+			      <label for="name">Name</label>
+			    </div>
+			    <div class="controls">
+			      <input type="email" id="email" class="floatLabel" name="email">
+			      <label for="email">Email</label>
+			    </div>
+			  </div>
+			  <div class="d-flex">
+				    <div class="controls">
+				      <div class="inputGroupAdd selectBox">
+						<em class="icon-arrow-down"></em>
+						<select class="floatLabel" name="countryCode" id="country" class="floatLabel" name="country">
+						<option value="+91">+91</option>
+						<option value="+61">+61</option>
+						<option value="+852">+852</option>
+						<option value="+968">+968</option>
+						<option value="+974">+974</option>
+						<option value="+65">+65</option>
+						<option value="+971">+971</option>
+						<option value="+44">+44</option>
+						<option value="+1">+1</option>
+						<option value="+1">+1</option>
+						<option value="+27">+27</option>
+						<option value="+60">+60</option>
+						<option value="+64">+64</option>
+						<option value="+66">+66</option>
+						<option value="+966">+966</option>
+						<option value="+31">+31</option>
+						<option value="+973">+973</option>
+						<option value="+54">+54</option>
+						<option value="+43">+43</option>
+						<option value="+880">+880</option>
+						<option value="+32">+32</option>
+						<option value="+55">+55</option>
+						<option value="+86">+86</option>
+						<option value="+385">+385</option>
+						<option value="+42">+42</option>
+						<option value="+45">+45</option>
+						<option value="+1809">+1809</option>
+						<option value="+20">+20</option>
+						<option value="+358">+358</option>
+						<option value="+679">+679</option>
+						<option value="+33">+33</option>
+						<option value="+49">+49</option>
+						<option value="+30">+30</option>
+						<option value="+592">+592</option>
+						<option value="+36">+36</option>
+						<option value="+62">+62</option>
+						<option value="+353">+353</option>
+						<option value="+972">+972</option>
+						<option value="+39">+39</option>
+						<option value="+81">+81</option>
+						<option value="+962">+962</option>
+						<option value="+82">+82</option>
+						<option value="+965">+965</option>
+						<option value="+853">+853</option>
+						<option value="+52">+52</option>
+						<option value="+212">+212</option>
+						<option value="+47">+47</option>
+						<option value="+48">+48</option>
+						<option value="+351">+351</option>
+						<option value="+40">+40</option>
+						<option value="+7">+7</option>
+						<option value="+34">+34</option>
+						<option value="+46">+46</option>
+						<option value="+41">+41</option>
+						<option value="+1868">+1868</option>
+						<option value="+216">+216</option>
+						<option value="+90">+90</option>
+						<option value="+84">+84</option>
+						</select>
+					  </div>
+					</div>
+					<div class="controls" style="width:100%;">
+				      <input type="tel" id="cell" class="floatLabel" name="cell">
+				      <label for="cell">Phone Number</label>
+				    </div>
+				</div>
+				<div class="controls">
+				    <input type="text" id="address" class="floatLabel" name="address">
+				    <label for="address">Address</label>
+				</div>
+				<div class="controls">
+				    <input type="text" id="city" class="floatLabel" name="city">
+				    <label for="city">City</label>
+				</div>
+				<div class="controls">
+				    <input type="text" id="state" class="floatLabel" name="state">
+				    <label for="state">State</label>
+				</div>
+				<div class="controls">
+				    <input type="text" id="pin" class="floatLabel" name="pin">
+				    <label for="pin">Pin Code</label>
+				</div>
+				<div class="controls">
+				    <input type="text" id="pan" class="floatLabel" name="pan">
+				    <label for="pan">PAN Number</label>
+				</div>
+				<label for="dob">Date of Birth</label>
+				<div class="controls" style="width:100%;">
+				    <input type="date" id="dob" class="floatLabel" name="dob">
+				</div>  
+				<div class="controls">
+			      <input type="text" id="designation" class="floatLabel" name="designation">
+			      <label for="designation">Select  Sales Executive Employee Code</label>
+			    </div>
+				    <div class="controls">
+				    	<!--2 Radio Buttons-->
+				    	<div class="form-wizard">
+                            <form action="" method="post" role="form">
+                                <fieldset class="wizard-fieldset show">
+                                   	<div class="wizard1" style="display: flex;width:100%;justify-content:space-around;margin-left:8rem;">
+                                        <div class="wizard-form-radio d-flex" style="margin-right:1rem;width:100%;">
+											   <input name="radio-name" id="radio1" type="radio" class="input-radio" 
+											   style="height: 20px !important;width:20px !important;">
+                                            <label for="radio1" style="margin-top:-1rem;">
+                                            	<img src="./images/booking.png" style="margin-left:1rem;">
+                                            	&nbsp;&nbsp;&nbsp;&nbsp;Booking Amount ₹ 415,894</label>
+                                        </div>
+
+                                        <div class="wizard-form-radio d-flex" style="width:100%;">
+											<input name="radio-name" id="radio1" type="radio" class="input-radio" 
+											style="height: 20px !important;width:20px !important;">
+                                            <label for="radio1" style="margin-top:-1rem;">
+                                            <img src="./images/blocking.png" style="margin-top:-1rem;margin-left:1rem;"> 
+                                        	&nbsp;&nbsp;&nbsp;&nbsp;Blocking Amount ₹ 100,000</label>
+                                       </div>
+                                   </div>
+                              	</fieldset> 
+                       		</form>
+				    	</div>
+					</div>
+				<br> 
+				<div class="controls" style="margin-left: 4rem;">
+				    <p>
+				    	<input type="checkbox" style="opacity: 1 !important;display:block !important; visibility:visible!important;width:15px;height:15px;margin-right:10px;">
+				    	<label style="margin-top:-1.5rem;">&nbsp;&nbsp;I Accept Terms & Conditions</label>
+					</p>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="controls" style="width:50%;margin:auto;">
+				 	<button>Proceed</button>
+				</div>         
+			</form>
+		</main>
+		<!--Footer Starts-->
+		<div class="footer-wrapper v3">
+			<div class="footer-top-area">
+				<div class="container">
+					<div class="row nav-folderized">
+						<div class="col-lg-3">
+							<div class="footer-content nav">
+								<h2 class="title">OVERVIEW</h2>
+								<ul class="footer-list list res-list">
+									<li> <a href="#">About us </a> </li>
+									<li> <a href="#">Career  </a> </li>
+									<li> <a href="#">Services  </a> </li>
+									<li> <a href="#">Contact us  </a> </li>
+									<li> <a href="#">Term and Condition </a> </li>
+									<li> <a href="#">Policy of use  </a> </li>
+									<li> <a href="#">Buy property online </a> </li>
+									<li> <a href="#">Request info </a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer-content nav">
+								<h2 class="title">5xprop</h2>
+								<ul class="footer-list list res-list">
+									<li><a href="https://www.5xprop.com/residential-property-in-noida">Residential property in Noida</a> </li>
+									<li><a href="https://www.5xprop.com/commercial-property-in-noida">Commercial property in Noida</a> </li>
+									<li><a href="https://www.5xprop.com/new-residential-project-in-noida">New  Residential Project in Noida</a> </li>
+									<li><a href="https://www.5xprop.com/new-commercial-project-in-noida">New  Commercial Project in Noida</a> </li>
+									<li><a href="#">Advertise your Property</a> </li>
+									<li><a href="#">Sitemap </a> </li>
+									<li><a href="#">Get alerts</a> </li>
+									<li><a href="https://www.5xprop.com/builder-list">Builders in India </a> </li>
+									<li><a href="https://www.5xprop.com/blog">Blog </a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer-content nav">
+								<h2 class="title">Quick Links</h2>
+								<ul class="footer-list list res-list">
+									<li> <a href="https://www.5xprop.com/?change_city=delhi"> Delhi </a> </li>
+									<li> <a href="https://www.5xprop.com/?change_city=faridabad"> Faridabad </a> </li>
+									<li> <a href="https://www.5xprop.com/?change_city=ghaziabad"> Ghaziabad </a> </li>
+									<li> <a href="https://www.5xprop.com/?change_city=greater-noida"> Greater Noida </a> </li>
+									<li> <a href="https://www.5xprop.com/?change_city=gurugram"> Gurugram </a> </li>
+									<li> <a href="https://www.5xprop.com/?change_city=mathura"> Mathura </a> </li>
+									<li> <a href="https://www.5xprop.com/?change_city=noida"> Noida </a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="footer-content">
+								<h4 class="title">KEEP IN TOUCH</h4>
+								<div class="value-input-wrap newsletter">
+									<form action="#">
+										<input type="text" placeholder="Your mail address ..">
+										<button type="submit">Subscribe</button>
+									</form>
+								</div>
+								<ul class="list footer-list mt-20">
+									<li>
+										<div class="contact-info">
+											<div class="icon"> <i class="fas fa-envelope"></i> </div>
+											<div class="text"><a href="#"> support@5xprop.com</a></div>
+										</div>
+									</li>
+									<li>
+										<div class="contact-info">
+											<div class="icon"> <i class="fas fa-phone-alt"></i> </div>
+											<div class="text">+91 8375929675</div>
+										</div>
+									</li>
+								</ul>
+								<div class="footer-social-wrap">
+									<p>Follow us on </p>
+									<ul class="social-buttons style2">
+										<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+										<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+										<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom-area">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-8 offset-md-2">
+							<p> © 2019-20 5xProp.com. All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Footer ends-->
+	</div>
+	<script src="../js/plugin.js"></script>
+	<!--Main js-->
+	<script src="../js/main.js"></script>
+	<script>
+		(function($){
+			function floatLabel(inputType){
+				$(inputType).each(function(){
+					var $this = $(this);
+					// on focus add cladd active to label
+					$this.focus(function(){
+						$this.next().addClass("active");
+					});
+					//on blur check field and remove class if needed
+					$this.blur(function(){
+						if($this.val() === '' || $this.val() === 'blank'){
+							$this.next().removeClass();
+						}
+					});
+				});
+			}
+			// just add a class of "floatLabel to the input field!"
+			floatLabel(".floatLabel");
+		})(jQuery);
+	</script>
+	<script>
+		$("form").on("change", ".file-upload-field", function(){ 
+    		$(this).parent(".file-upload-wrapper").attr("data-text",         $(this).val().replace(/.*(\/|\\)/, '') );
+		});
+	</script>
+</body>
+</html>
