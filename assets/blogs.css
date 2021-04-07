@@ -1,0 +1,102 @@
+
+#navbarNavAltMarkup div
+{
+    width:40%;
+}
+#navbarNavAltMarkup div a
+{
+    width:25%;
+    color:#4876af;
+}
+#navbarNavAltMarkup div a button
+{
+    background-color: #049fe2;
+    color:white;
+    border-radius: 10px;
+}
+#header
+{
+    background-color: #cce6ee;
+}
+body
+{
+    margin-left: 20px!important;
+    margin-right: 20px!important;
+}
+
+.blogsmainheader
+{
+    background-color: #eeeff0;
+}
+
+.aboutusheader
+{
+    
+color: #777777;
+font-weight: bolder;
+font-size: x-large;
+width: 100%;
+text-align: center;
+}
+.coloredText
+{
+    color: #777777;
+}
+.footerdiv .anything
+{
+    
+    width: 100%;
+    background-color: rgba(201,201,201,255);
+    
+    
+}
+.mainHeading{
+
+    color: #777777;
+        font-weight: bolder;
+        font-size: x-large;
+        width: 100%;
+        text-align: center;
+}
+
+
+.logotext
+{
+    font-size: 16px;
+    color: #777777;
+    font-weight: 700;
+    padding-top: 25px;
+}
+.logoHeader .col
+{
+    text-align: center;
+    
+    
+}
+
+.imagediv
+{
+    position: relative;
+    display: inline-block;
+}
+
+.imagediv:after {
+    content : "";
+    position: absolute;
+    left   : 0;
+    z-index: 100;
+    
+    width  :7px;
+    height   : 66%;  /* or 100px */
+    background: #f9bf19;
+  }
+  .imagediv:before {
+    content : "";
+    position: absolute;
+    top  : 0;
+    z-index: 100;
+    
+    height  : 7px;
+    width   : 60%;  /* or 100px */
+    background: #f9bf19;
+  }
