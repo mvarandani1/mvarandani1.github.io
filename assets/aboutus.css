@@ -1,0 +1,56 @@
+#navbarNavAltMarkup div
+{
+    width:40%;
+}
+#navbarNavAltMarkup div a
+{
+    width:25%;
+    color:#4876af;
+}
+#navbarNavAltMarkup div a button
+{
+    background-color: #049fe2;
+    color:white;
+    border-radius: 10px;
+}
+#header
+{
+    background-color: #cce6ee;
+}
+.mainPage
+{
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+}
+.mainHeading{
+
+color: #777777;
+    font-weight: bolder;
+    font-size: x-large;
+    width: 100%;
+    text-align: center;
+}
+
+.footerdiv .anything
+{
+    
+    width: 100%;
+    background-color: rgba(201,201,201,255);
+    
+    
+}
+.logotext
+{
+    font-size: 16px;
+    color: #777777;
+    font-weight: 700;
+    padding-top: 25px;
+}
+.logoHeader .col
+{
+    text-align: center;
+    
+    
+}
