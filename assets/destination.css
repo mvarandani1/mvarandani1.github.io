@@ -1,0 +1,100 @@
+.secondpart .row
+{
+    margin-top: 10px;
+}
+
+#navbarNavAltMarkup div
+{
+    width:40%;
+}
+#navbarNavAltMarkup div a
+{
+    width:25%;
+    color:#4876af;
+}
+#navbarNavAltMarkup div a button
+{
+    background-color: #049fe2;
+    color:white;
+    border-radius: 10px;
+}
+
+body
+{
+    margin-left: 20px!important;
+    margin-right: 20px!important;
+}
+
+.toursmainheader
+{
+    background-color: #eeeff0;
+}
+
+.footerdiv .anything
+{
+    
+    width: 100%;
+    
+    
+    
+}
+.coloredText
+{
+    color: #777777;
+}
+.mainHeading{
+
+    color: #777777;
+        font-weight: bolder;
+        font-size: x-large;
+        width: 100%;
+        text-align: center;
+}
+
+
+.logotext
+{
+    font-size: 16px;
+    color: #777777;
+    font-weight: 700;
+    padding-top: 25px;
+}
+.logoHeader .col
+{
+    text-align: center;
+    
+    
+}
+
+.imagediv
+{
+    position: relative;
+    
+}
+
+.imagediv:after {
+    content : "";
+    position: absolute;
+    left   : 0;
+    z-index: 100;
+    top:0;
+    width  :10px;
+    height   : 30%;  /* or 100px */
+    background: #f9bf19;
+  }
+  .imagediv:before {
+    content : "";
+    position: absolute;
+    top  : 0;
+    z-index: 100;
+    left   : 0;
+    height  : 10px;
+    width   : 30%;  /* or 100px */
+    background: #f9bf19;
+  }
+ 
+  .keyfactPart
+  {
+      font-size: 12px;
+      color: #777777;
+  }
