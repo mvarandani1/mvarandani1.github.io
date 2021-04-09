@@ -100,3 +100,15 @@ text-align: center;
     width   : 60%;  /* or 100px */
     background: #f9bf19;
   }
+  
+
+nav button {
+  background: var(--primary-color);
+  padding: 5px;
+  border-radius: 8px;
+  width: 60px;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+

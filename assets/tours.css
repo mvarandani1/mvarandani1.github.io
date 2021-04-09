@@ -91,3 +91,11 @@ body
     width   : 60%;  /* or 100px */
     background: #f9bf19;
   }
+  .hotelScheme
+  {
+font-size: 12px;;
+  }
+  .hotelScheme span
+  {
+      width: 100%;
+  }

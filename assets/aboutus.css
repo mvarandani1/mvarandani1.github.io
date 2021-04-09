@@ -54,3 +54,75 @@ color: #777777;
     
     
 }
+
+.imagediv
+{
+    position: relative;
+    
+}
+
+.imagediv:after {
+    content : "";
+    position: absolute;
+    left   : 0;
+    z-index: 100;
+    top:0;
+    width  :10px;
+    height   : 65%;  /* or 100px */
+    background: #f9bf19;
+  }
+  .imagediv:before {
+    content : "";
+    position: absolute;
+    top  : 0;
+    z-index: 100;
+    left   : 0;
+    height  : 10px;
+    width   : 47%;  /* or 100px */
+    background: #f9bf19;
+  }
+  .top-left {
+    position: absolute;
+    top: 55px;
+    left: 120px;
+  }
+
+  .top-left1 {
+    position: absolute;
+    top: 100px;
+    left: 120px;
+  }
+  .top-left2 {
+    position: absolute;
+    top: 170px;
+    width: 83%;
+    left: 120px;
+  }
+
+  .journeyHeading
+  {
+      font-size: 32px;
+      font-weight: bolder;
+  }
+
+  .journeyHeading1
+  {
+      font-size: 22px;
+      font-weight: 700;
+  }
+  .journeytext
+  {
+      color: white;
+  }
+  
+nav button {
+    background: var(--primary-color);
+    padding: 5px;
+    border-radius: 8px;
+    width: 60px;
+    outline: none;
+    border: none;
+    color: #fff;
+  }
+  
+  
